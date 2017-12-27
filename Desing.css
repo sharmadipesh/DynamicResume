@@ -1,0 +1,173 @@
+.mt-3, .my-3 {
+     margin-top: 0rem!important; 
+}
+#category,#pos
+{
+    width: 250px;
+    margin-top: 0px;
+}
+#from,#to
+{
+    width: 80px;
+}
+#yr{
+    width:80px!important;
+
+}
+.desc
+{
+    margin-left: 155px;
+}
+hr
+{ 
+    border: 0;
+    margin-top: 40px;
+    height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); 
+}
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+#line2{
+    margin-top: 10px;
+    padding-left: 5px;
+}
+.pad1
+{
+    padding-left: 30px;
+}
+.pad2
+{
+    padding-left: 40px;
+}
+.part1
+{
+    background-color: 	#81E67C;   
+}
+.part2
+{
+    background-color: 	#ffffff;
+}
+.color-btn
+{
+    background-color: 	#81E67C;   
+    width: 95px;
+    border-radius: 10px;
+}
+.col-xs-4
+{
+    margin-right: 70px;
+}
+.marg
+{
+    margin-top: 50px;
+
+}
+#ext
+{
+    margin-left: 20px;
+    width: 95px;
+    border-radius: 10px;    
+}
+#btn-pd
+{
+    
+    padding-top: 7px;
+
+}
+.personal
+{
+    margin-top: 40px;
+    padding-left: 80px;
+    margin-bottom: 25px;
+    color: #81E67C;
+}
+#img-Upload
+{
+    border:2px solid black;
+
+}
+
+input[type="text"]:focus,input[type="email"]:focus,#abt:focus,#category:focus{
+    border-color: #81E67C;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6);
+    outline: 0 none;
+}
+#univ{
+    margin-left: 153px;
+}
+#se,#comp,#ttl,#des,#lnk{
+    width: 544px;
+}
+#achyr{
+    margin-left: 70px;
+}
+#yr{
+    width: 70px;
+}
+#mla{
+    margin-right: 15px;
+}
+button[type="submit"]:hover,button[type="file"]:hover
+{
+    color:white;
+}
+.material-icons.md-48 
+{ 
+    font-size: 70px;
+    color: #81E67C;
+}
+.icon-right
+{
+    text-align: center;
+}
+img
+{
+    max-width:180px;
+    border-radius: 10px;
+}
+  input[type=file]
+{
+    padding:10px;
+    /* background:#2d2d2d; */
+}
+#mlz{
+    margin-left: 168px;
+}
+/* #upla
+{
+    border-radius: 10px;
+    border:2px solid #81E67C;
+
+} */
+.custome-upload{
+    border:1px solid #81E67C;
+    background-color: #81E67C;
+    color:black;
+    padding: 8px;
+    border-radius: 10px;
+    width: 95px;
+    text-align: center;
+    height: 39px;
+}
+input[type="file"]
+{
+  display:none;
+}
+#fname,#lname
+{
+    width: 250px;
+}
+label{
+    margin-bottom: 0px;
+}
+#emailId,#contact,#abt
+{
+    width: 555px;
+}
+.form-rounded
+{
+    border-radius: 0.8rem;
+}

@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="desing.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3 part1">
+                
+            </div>
+            <div class="col part2">
+
+                <div class="row">
+                    <div class="col">
+                        <div class="row marg">
+                            <div class="col-8">
+                                <h1 class="pad1">Hello,&nbsp;<b id="nameInBold"> </b></h1>    
+                            </div>
+                            <div class="col-4" id="btn-pd">
+                                    <button class="btn color-btn" type="submit">Save</button>
+                                    <button type="button" class="btn btn-outline-secondary" id="ext">Exit</button>
+                            </div>
+                            <div class="col" id="line2">
+                                    <h3 class="pad2">Lets Build you resume together</h3>
+                            </div>
+                            <div class="col-12 personal">
+                                <h2>Personal Details</h2>
+                            </div>
+                            <!-- image upload start -->
+                            <div class="row" style="margin-bottom: 20px;">
+                                    <div class="col-4" id="mlz">
+    
+                                            <img id="blah" src="http://placehold.it/180" alt="your image" />
+                                
+                                    </div>
+                                        <div class="col-4" style="padding:37px; ">
+                                            <label for="upla" class="custome-upload">
+                                                Upload
+                                                <input type="file" onchange="readURL(this);" id="upla"/>
+                                            </label>
+                                                <button type="button" class="btn btn-outline-secondary" id="ext" style="margin-left: 0px;margin-top: 10px;" onchange="readURL();">Remove</button>
+                                        </div>
+                            </div>
+                            <!-- image upload ends -->
+                            <div class="col-12">
+
+                                <form>
+                                        <div class="form-row">
+                                            <div class="col-2 icon-right">
+                                                    <i class="material-icons md-48">account_circle</i>
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="fname">First Name</label>
+                                                <input type="text" class="form-control form-rounded"  id="fname">
+                                            </div>
+                                            <div class="col-4">
+                                                    <label for="lname">Last Name</label>                                                
+                                                <input type="text" id="lname" class="form-control form-rounded">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 20px;">
+                                                <div class="col-2 icon-right" style="padding-right: 0px;">
+                                                        <i class="material-icons md-48">email</i>     
+                                                </div>
+                                                <div class="col-9">
+                                                    <label for="emailId">Email Id</label>
+                                                    <input type="email" class="form-control form-rounded" id="emailId">
+                                                </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 20px;">
+                                                <div class="col-2 icon-right" style="padding-right: 0px;">
+                                                        <i class="material-icons md-48">phone</i>
+                                                </div>
+                                                <div class="col-9">
+                                                    <label for="contact">Contact Number</label>
+                                                    <input type="text" class="form-control form-rounded" id="contact">
+                                                </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 20px;">
+                                                <div class="col-2 icon-right" style="padding-right: 0px;">
+                                                        <i class="material-icons md-48">message</i>
+                                                </div>
+                                                <div class="col-9">
+                                                    <label for="abt">About me</label>
+                                                    <textarea class="form-control form-rounded" rows="3" id="abt"></textarea>
+                                                </div>
+                                        </div>
+                                </form>
+                            </div>
+
+                            <div class="col-12">
+                                <hr>
+                            </div>
+
+                            <div class="col-12 personal">
+                                <h2>Education Details</h2>
+                            </div>
+
+                            <div class="col-12">
+                                <form  id="eduMain">
+                                    <div class="form-row">
+                                        <div class="col-2 icon-right">
+                                                <i class="material-icons md-48">payment</i>
+                                        </div>
+                                        <!-- <div class="col-9"> -->
+                                        <div class="col-4 form-group">
+                                                    <label for="category">Category</label>
+                                                    <input type="text" id="category" class="form-control form-rounded">    
+                                        </div>
+                                        <div class="col-2 form-group">
+                                                    <label for="from">From</label>
+                                            
+                                                    <input type="text" id="from" class="form-control form-rounded">    
+                                        </div>
+                                        <div class="col-2 form-group">
+                                            <label for="to">To</label>
+                                            
+                                                <input type="text" id="to" class="form-control form-rounded">
+                                        </div>
+                                        <div class="col-2 form-group" id="btn-pd">
+                                        
+                                                <button class="btn color-btn btn-sm" type="submit" id="eduNew">Add new</button>
+                            
+                                        </div>
+                    
+                                        <div class="col-9 form-group" id="univ">
+                                        
+                                                <label for="se">School/University Name</label>
+                                                <input type="text" class="form-control form-rounded" id="se">
+                            
+                                        </div>
+                                           
+                                    </div>
+                                    <!-- </div> -->
+                                </form>
+                            </div>
+                            <div class="col-12">
+                                    <hr>
+                            </div>
+
+
+                            <div class="col-12 personal">
+                                    <h2>Work Experience</h2>
+                                </div>
+    
+                                <div class="col-12">
+                                    <form  id="workExp">
+                                        <div class="form-row">
+                                            <div class="col-2 form-group icon-right">
+                                                    <i class="material-icons md-48">work</i>
+                                            </div>
+                                            <!-- <div class="col-9"> -->
+                                            <div class="col-4 form-group">
+                                                        <label for="pos">Position</label>
+                                                        <!-- <input type="text" id="category" class="form-control form-rounded">     -->
+                                                        <input type="text" id="pos" class="form-control form-rounded">    
+                                            </div>
+                                            <div class="col-2 form-group">
+                                                        <label for="from">From</label>
+                                                
+                                                        <input type="text" id="from" class="form-control form-rounded workfrom">    
+                                            </div>
+                                            <div class="col-2 form-group">
+                                                <label for="to">To</label>
+                                                
+                                                    <input type="text" id="to" class="form-control form-rounded workto">
+                                            </div>
+                                            <div class="col-2 form-group" id="btn-pd">
+                                            
+                                                    <button class="btn color-btn btn-sm" type="submit" id="addWork">Add new</button>
+                                
+                                            </div>
+                        
+                                            <div class="col-9 form-group" id="univ">
+                                            
+                                                    <label for="comp">Company/Oraganization</label>
+                                                    <input type="text" class="form-control form-rounded" id="comp">
+                                
+                                            </div>
+                                               
+                                        </div>
+                                        <!-- </div> -->
+                                    </form>
+                                </div>
+
+                                <div class="col-12">
+                                        <hr>
+                                </div>
+                                <div class="col-12 personal">
+                                        <h2>Projects</h2>
+                                </div>
+
+
+                                <div class="col">
+
+                                    <form id="addProject">
+                                        <div class="form-row">
+                                            <div class="col-2 form-group icon-right">
+                                                    <i class="material-icons md-48">filter_frames</i>
+                                            </div>                      
+                                            <div class="col-8 form-group">
+                                                    <label for="ttl">Title</label>
+                                                    <input type="text" class="form-control form-rounded" id="ttl">
+                                            </div>
+                                            <div class="col-2 form-group" id="btn-pd">
+                                            
+                                                    <button class="btn color-btn btn-sm" type="submit" id="newProject">Add new</button>
+                                
+                                            </div>         
+                                            <div class="col-9 form-group desc">
+                                                    <label for="des">Description</label>
+                                                    <input type="text" class="form-control form-rounded" id="des">
+                                            </div>             
+                                            <div class="col-9 form-group desc">
+                                                    <label for="lnk">Project Link</label>
+                                                    <input type="text" class="form-control form-rounded" id="lnk">
+                                            </div>             
+                                        </div>
+
+                                    </form>
+                                </div>
+
+
+                                <div class="col-12">
+                                        <hr>
+                                </div>
+                                <div class="col-12 personal">
+                                        <h2>Achievements</h2>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <form id="achie">
+                                        <div class="form-row">
+                                            <div class="col-2 form-group icon-right">
+                                                    <i class="material-icons md-48">check_circle</i>
+                                            </div>
+                                            <div class="col-5 form-group">
+                                                    <label for="ach">Title</label>
+                                                    <input type="text" class="form-control form-rounded" id="ach">
+                                            </div>
+                                            <div class="col-2 form-group" id="achyr">
+                                                    <label for="yr">Year</label>
+                                                    <input type="text" class="form-control form-rounded" id="yr">
+                                            </div>
+                                            <div class="col-2 form-group" >
+                                            
+                                                    <button class="btn color-btn btn-sm" type="submit" id="addAch">Add new</button>
+                                
+                                            </div> 
+                                        </div>
+
+
+                                    </form>
+                                </div>
+
+
+
+
+
+                                <div class="col-12">
+                                        <hr>
+                                </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark" style="padding:15px; ">
+        <center>
+            <button type="button" class="btn btn-outline-light">Download PDF</button>
+            <button type="button" class="btn btn-outline-success">publish</button>
+        </center>
+    </div>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function readURL(input) 
+{
+     if (input.files && input.files[0]) 
+    {
+               var reader = new FileReader();
+                reader.onload = function (e) 
+                {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]); 
+   }
+}
+</script>
+
+
+
+
+
+
+    <script src="Validation.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>
