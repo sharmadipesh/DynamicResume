@@ -1,7 +1,7 @@
 //Name in Bold
 var fname=document.querySelector("#fname");
 fname.addEventListener("keyup",function(e){
-
+    e.preventDefault();
     var val=document.querySelector("#fname").value;
     document.querySelector("#nameInBold").textContent=val;
 
@@ -11,6 +11,7 @@ fname.addEventListener("keyup",function(e){
 var eduMain=document.querySelector("#eduMain");
 var addEdu=document.querySelector("#eduNew");
 addEdu.addEventListener("click",function(e){
+    
     e.preventDefault();
     
     var ct=document.querySelector("#category").value;
